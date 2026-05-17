@@ -8,6 +8,45 @@ body{
   color:white;
 }
 
-h1{
-  font-size:40px;
+.player{
+  background:#1e1e1e;
+  padding:20px;
+  width:300px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.cover{
+  width:100%;
+  border-radius:15px;
+}
+
+h2{
+  margin-top:15px;
+}
+
+p{
+  color:gray;
+}
+
+input{
+  width:100%;
+  margin:20px 0;
+}
+
+.buttons{
+  display:flex;
+  justify-content:space-around;
+}
+
+button{
+  background:#ff004f;
+  border:none;
+  color:white;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  font-size:20px;
+  cursor:pointer;
 }
