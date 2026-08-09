@@ -20,7 +20,7 @@
 
   <div class="buttons">
     <button>⏮</button>
-    <button id="play">▶</button>
+    <button id="play">▶ Play</button>
     <button>⏭</button>
   </div>
 
@@ -41,5 +41,17 @@ playBtn.addEventListener('click', () => {
   }
 });
 </script>
-</body>
-</html>
+<script>
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+
+playBtn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playBtn.textContent = '⏸ Pause';
+  } else {
+    audio.pause();
+    playBtn.textContent = '▶ Play';
+  }
+});
+</script>
