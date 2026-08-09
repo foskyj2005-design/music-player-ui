@@ -23,35 +23,3 @@
     <button id="play">▶ Play</button>
     <button>⏭</button>
   </div>
-
-</div>
-
-<script src="script.js"></script>
-<script>
-const audio = document.getElementById('audio');
-const playBtn = document.getElementById('play');
-
-playBtn.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    playBtn.textContent = '⏸ Pause';
-  } else {
-    audio.pause();
-    playBtn.textContent = '▶ Play';
-  }
-});
-</script>
-<script>
-const audio = document.getElementById('audio');
-const playBtn = document.getElementById('play');
-
-playBtn.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    playBtn.textContent = '⏸ Pause';
-  } else {
-    audio.pause();
-    playBtn.textContent = '▶ Play';
-  }
-});
-</script>
