@@ -15,7 +15,7 @@
 
   <h2>Lonely Nights</h2>
   <p>Matthew John</p>
-
+<audio id="audio" src="what-else.mp3"></audio>
   <input type="range" value="30">
 
   <div class="buttons">
@@ -23,3 +23,20 @@
     <button id="play">▶ Play</button>
     <button>⏭</button>
   </div>
+<script>
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+
+playBtn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playBtn.textContent = '⏸ Pause';
+  } else {
+    audio.pause();
+    playBtn.textContent = '▶ Play';
+  }
+});
+</script>
+
+</body>
+</html>
